@@ -185,4 +185,30 @@ body {
         top: 4%;
         left: -50px;
     }
+    #random_profile_card_image {
+        width: 120%;
+    }
+}
+
+
+#title {
+    text-align: center;
+}
+
+
+.design-file > img {
+    width: 90%;
+    border-radius: 13px;
+}
+
+.design-file {
+    border: 1px solid #000;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    border-radius: 19px;
+    width: 40%;
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
 }

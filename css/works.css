@@ -186,3 +186,26 @@ body {
         left: -50px;
     }
 }
+
+#title {
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+}
+
+#boskiemaniery-clip {
+    width: 90%;
+}
+
+#boskiemaniery {
+    text-align: center;
+    align-items: center;
+    border: 1px solid #000;
+    padding: 10px;
+    border-radius: 13px;
+}
+
+#title {
+    font-size: 60px;
+}
