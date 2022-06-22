@@ -1,0 +1,450 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fascinate&family=Kdam+Thmor+Pro&family=Noto+Serif&family=Permanent+Marker&display=swap');
+
+:root {
+    --font-one: 'Bebas Neue', cursive;
+    --font-two: 'Fascinate', cursive;
+    --font-three: 'Kdam Thmor Pro', sans-serif;
+    --font-four: 'Noto Serif', serif;
+    --font-five: 'Permanent Marker', cursive;
+}
+
+* {
+    margin: 1.7;
+}
+
+body {
+    background: #f2f2f2;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.header {
+    width: 100%;
+    height: 140px;
+}
+
+.logo {
+    width: 110px;
+    height: 110px;
+    background: url("../assets/wllppr.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    border-radius: 50%;
+    margin-right: auto;
+    margin-left: auto;
+    transition: 0.2s;
+    cursor: pointer;
+    padding: 13px;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+}
+
+/* LINKS */
+.links {
+    display: flex;
+    width: 30%;
+    justify-content: space-between;
+    position: absolute;
+    top: 70px;
+    left: 30px;
+}
+
+.fa {
+    font-size: 23px;
+}
+
+.link {
+    color: #303030;
+    text-decoration: none;
+    font-size: 23px;
+    text-transform: uppercase;
+    transition: 0.3s ease-in-out;
+}
+
+.links > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.links > div > i {
+    padding: 15px;
+}
+
+.link:hover {
+    letter-spacing: 2.5px
+}
+
+/* MEDIA */
+.media {
+    display: flex;
+    padding: 10px;
+    font-size: 38px;
+    position: absolute;
+    top: 20px;
+    right: 0;
+}
+
+.media > a {
+    padding: 30px;
+    text-decoration: none;
+    color: #303030;
+    transition: 0.3s ease-in-out;
+}
+
+.media > a:hover {
+    transform: scale(1.2);
+}
+
+.fa-discord {
+    transition: 0.3s ease-in-out;
+}
+
+.fa-discord:hover {
+    color: #5662f6;
+}
+
+.fa-instagram {
+    transition: 0.3s ease-in-out;
+}
+
+.fa-instagram:hover {
+    color: #f58529;
+}
+
+.fa-figma {
+    transition: 0.3s ease-in-out;
+}
+
+.fa-figma:hover {
+    color: #52208b;
+}
+
+.fa-github {
+    transition: 0.3s ease-in-out;
+}
+
+.fa-github:hover {
+    color: #28707c;
+}
+
+.title-large {
+    font-family: 'Noto Serif', serif;
+    font-size: 80px;
+    word-wrap: break-word;
+    /* position: absolute;
+    left: 5%; */
+}
+
+/* ANIMATIONS */
+@keyframes letter-r-font {
+    0% {
+        font-family: var(--font-one);
+    }
+    20% {
+        font-family: var(--font-two);
+    }
+    40% {
+        font-family: var(--font-three);
+    }
+    60% {
+        font-family: var(--font-four);
+    }
+    80% {
+        font-family: var(--font-five);
+    }
+    100% {
+        font-family: var(--font-three);
+    }
+}
+
+@keyframes letter-e-font {
+
+    20% {
+        font-family: var(--font-three);
+    }
+    40% {
+        font-family: var(--font-one);
+    }
+    60% {
+        font-family: var(--font-four);
+    }
+    80% {
+        font-family: var(--font-two);
+    }
+    100% {
+        font-family: var(--font-five);
+    }
+}
+@keyframes letter-t-font {
+
+    20% {
+        font-family: var(--font-two);
+    }
+    40% {
+        font-family: var(--font-five);
+    }
+    60% {
+        font-family: var(--font-three);
+    }
+    80% {
+        font-family: var(--font-one);
+    }
+    100% {
+        font-family: var(--font-three);
+    }
+}
+@keyframes letter-i-font {
+
+    20% {
+        font-family: var(--font-four);
+    }
+    40% {
+        font-family: var(--font-five);
+    }
+    60% {
+        font-family: var(--font-four);
+    }
+    80% {
+        font-family: var(--font-three);
+    }
+    100% {
+        font-family: var(--font-one);
+    }
+}
+@keyframes letter-g-font {
+
+    20% {
+        font-family: var(--font-two);
+    }
+    40% {
+        font-family: var(--font-five);
+    }
+    60% {
+        font-family: var(--font-four);
+    }
+    80% {
+        font-family: var(--font-five);
+    }
+    100% {
+        font-family: var(--font-one);
+    }
+}
+@keyframes letter-a-font {
+
+    20% {
+        font-family: var(--font-two);
+    }
+    40% {
+        font-family: var(--font-three);
+    }
+    60% {
+        font-family: var(--font-four);
+    }
+    80% {
+        font-family: var(--font-five);
+    }
+    100% {
+        font-family: var(--font-three);
+    }
+}
+
+/* R-E-T-I-G-A LETTERS */
+.retiga-letter-r {
+    font-family: 'Fascinate', cursive;
+    animation: letter-r-font 4s ease-in-out infinite;
+}
+
+.retiga-letter-e {
+    font-family: 'Bebas Neue', cursive;
+    animation: letter-e-font 4s ease-in-out infinite;
+}
+
+.retiga-letter-t {
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    animation: letter-t-font 4s ease-in-out infinite;
+}
+
+.retiga-letter-i {
+    font-family: 'Permanent Marker', cursive;
+    animation: letter-i-font 4s ease-in-out infinite;
+}
+
+.retiga-letter-g {
+    font-family: 'Bebas Neue', cursive;
+    animation: letter-g-font 4s ease-in-out infinite;
+}
+
+.retiga-letter-a {
+    font-family: 'Noto Serif', serif;
+    animation: letter-a-font 4s ease-in-out infinite;
+}
+
+.description {
+    font-size: 24px;
+    word-wrap: break-word;
+    width: 40%;
+}
+
+.introduction {
+    width: 100%;
+}
+
+/* HOBBY BOXES */
+
+.hobby-boxes {
+    position: absolute;
+    right: 6%;
+    top: 230px;
+}
+
+.ui-design {
+    width: 18rem;
+    height: 13rem;
+    background-color: #f58529;
+    padding: 10px;
+    border-radius: 14px;
+    text-align: center;
+}
+
+.ui-description > a {
+    text-decoration: none;
+    color: #000;
+}
+
+.ui-description {
+    font-size: 18px;
+    word-wrap: break-word;
+    text-align: center;
+}
+
+.web-dev {
+    width: 18rem;
+    height: 13rem;
+    background-color: #349431;
+    padding: 10px;
+    border-radius: 14px;
+    text-align: center;
+}
+
+.webdev-description > a {
+    text-decoration: none;
+    color: #000;
+}
+
+.webdev-description {
+    font-size: 18px;
+    word-wrap: break-word;
+    text-align: center;
+}
+
+/* RESPONSIBLITY */
+
+@media screen and (max-width: 1075px) {
+    .hobby-boxes {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 910px) {
+    .media {
+        display: none
+    }
+}
+
+@media screen and (max-width: 410px) {
+    .title-large {
+        font-size: 37px;
+        text-align: center;
+    }
+    .description {
+        text-align: center;
+        width: 100%;
+    }
+    .hobby-boxes {
+        display: block;
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 350px;
+    }
+
+    .nav {
+        top: 4%;
+        left: -50px;
+    }
+
+    .media-res {
+        opacity: 1;
+        position: absolute;
+        bottom: 0;
+    }
+}
+
+/* MENU */
+.nav {
+    position: fixed;
+    width: 100%;
+    top: 5;
+}
+
+.nav__list {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 2rem;
+    margin: 0 2rem;
+}
+
+.nav__listitem {
+    list-style: none;
+    font-weight: bold;
+    position: relative;
+    padding: 1.5rem 1rem;
+    cursor: pointer;
+}
+
+.nav__listitem:hover ul, .nav__listitem:focus ul {
+    opacity: 1;
+    visibility: visible;
+}
+
+.nav__listitemdrop {
+    position: absolute;
+    top: 4rem;
+    left: -1rem;
+    box-shadow: 0 0 10px #e1e5ee;
+    border-radius: 9px;
+    width: 12rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 200ms ease-in-out;
+    background-color: #eee;
+}
+
+.nav__listitemdrop > li {
+    list-style: none;
+    padding: 0.5rem 1rem;
+    border-radius: 9px;
+    transition: background-color 200ms ease-in-out
+}
+
+.nav__listitemdrop > li > a {
+    text-decoration: none;
+    color: black;
+}
+
+.nav__listitemdrop > li:hover {
+    background-color: rgb(160, 83, 83);
+}
+
+.fa-bars {
+    font-size: 35px;
+}
