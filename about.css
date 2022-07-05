@@ -4,6 +4,7 @@ body {
     flex-direction: column;
     overflow: hidden;
     margin: 29px;
+    text-align: center;
 }
 
 .fps {
@@ -36,4 +37,20 @@ body {
 
 .link:hover {
     opacity: .6;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    padding: 20px;
+    opacity: .4;
+    width: 100%;
+    text-align: center;
+}
+
+.about > p {
+    word-wrap: break-word;
+    width: 190px;
+    margin-left: auto;
+    margin-right: auto;
 }
